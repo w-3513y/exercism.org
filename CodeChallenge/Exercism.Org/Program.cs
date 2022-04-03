@@ -1,4 +1,5 @@
 ﻿using System;
+using Exercism.Org.exercices;
 
 namespace Exercism.org
 {
@@ -7,7 +8,7 @@ namespace Exercism.org
         static void Main(string[] args)
         {
             //Call here the exercism that you want to test
-            Console.WriteLine(Exercism.Org.exercices.Acronym.Abbreviate("Ruby on Rails"));
+            Console.WriteLine(SavingsAccount.AnnualBalanceUpdate(0.000001m));
         }
     }
 }
