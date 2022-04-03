@@ -6,10 +6,10 @@ services:
     image: exercismorg
     build:
       context: .
-      dockerfile: Exercism.Org/Dockerfile
+      dockerfile: CodeChallenge/Exercism.Org/Dockerfile
 
   exercismorgunittest:
     image: exercismorgunittest
     build:
       context: .
-      dockerfile: Exercism.Org.UnitTest/Dockerfile
+      dockerfile: CodeChallenge/Exercism.Org.UnitTest/Dockerfile

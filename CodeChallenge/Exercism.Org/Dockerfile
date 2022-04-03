@@ -8,10 +8,10 @@ USER appuser
 
 FROM mcr.microsoft.com/dotnet/sdk:5.0-focal AS build
 WORKDIR /src
-COPY ["Exercism.Org/Exercism.org.csproj", "Exercism.Org/"]
-RUN dotnet restore "Exercism.Org/Exercism.org.csproj"
+COPY ["CodeChallenge/Exercism.Org/Exercism.org.csproj", "Exercism.Org/"]
+RUN dotnet restore "CodeChallenge/Exercism.Org/Exercism.org.csproj"
 COPY . .
-WORKDIR "/src/Exercism.Org"
+WORKDIR "/src/CodeChallenge/Exercism.Org"
 RUN dotnet build "Exercism.org.csproj" -c Release -o /app/build
 
 FROM build AS publish
