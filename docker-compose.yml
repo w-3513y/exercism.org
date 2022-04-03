@@ -1,0 +1,15 @@
+
+version: '3.4'
+
+services:
+  exercismorgu:
+    image: exercismorg
+    build:
+      context: .
+      dockerfile: Exercism.Org/Dockerfile
+
+  exercismorgunittest:
+    image: exercismorgunittest
+    build:
+      context: .
+      dockerfile: Exercism.Org.UnitTest/Dockerfile
