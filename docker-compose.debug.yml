@@ -1,0 +1,11 @@
+
+version: '3.4'
+
+services:
+  exercismorgunittest:
+    image: exercismorgunittest
+    build:
+      context: .
+      dockerfile: Exercism.Org.UnitTest/Dockerfile
+    volumes:
+      - ~/.vsdbg:/remote_debugger:rw
