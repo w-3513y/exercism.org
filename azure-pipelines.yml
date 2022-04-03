@@ -27,4 +27,4 @@ stages:
         command: build
         dockerfile: '**/Dockerfile'
         tags: |
-          $(tag)
+          latest
